@@ -2,14 +2,14 @@
 
 In-browser previewing for static responsive web design comps. No code required. 
 
-Respre works by interpreting the contents of the `preview` directory. `preview` contains a collection of static image comps, each named with their **minimum** resolution (ie. `1024.jpg`), each a responsive breakpoint. 
+Respre works by interpreting the contents of the `preview` directory. `preview` contains a collection of static image comps, each named with their **minimum** resolution (ie. `1024.jpg`), cooresponding to a responsive breakpoint. 
 
 ### Getting Started
 1. Clone or download this repo. Move the files on to an PHP webserver online or locally. 
 
-2. Replace the boilerplate image files in `preview` with your own static comps. Give each file a numeric filename that corresponds to its breakpoint. 
+2. Replace the boilerplate image files in `preview` with your own static comps. Give each file a numeric filename that corresponds to its target breakpoint. 
 
-3. Visit index.php in your browser to preview the comps. Adjust your browser's viewport size, or visit the page from a mobile device or tablet, to preview different resolutions.
+3. Visit /index.php in your browser to preview the comps. Adjust your browser's viewport size, or visit the page from a mobile device or tablet, to preview your comps at different resolutions.
 
 There are no restrictions on file formats (any browser-safe formats work), and no restrictions on the number of comps/breakpoints that it will display.
 
