@@ -1,6 +1,6 @@
 # Respre
 
-Simple and free previewing for static responsive web design comps. No code required. 
+In-browser previewing for static responsive web design comps. No code required. 
 
 Respre works by interpreting the contents of the `preview` directory. `preview` contains a collection of static image comps, each named with their **minimum** resolution (ie. `1024.jpg`), each a responsive breakpoint. 
 
