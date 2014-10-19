@@ -24,5 +24,6 @@ There are no restrictions on file formats (any browser-safe formats work), and n
   - `1440.jpg` – Large Destop
 - This tool relies on PHP's `scandir()` function. Some webservers may disable this. And it requires that your `preview` directory is readable. If you're having problems on a webserver you're not in full control of (ie. shared webhosting), try to CHMOD your `preview` directory to 755. 
 
-#### Help
-Web server trouble? Try [MAMP](http://mamp.info/). It's is a dead-simple tool for running a compatible server locally on your machine. Point the Web Server's Document Root at the downloaded `Respre` directory and visit http://localhost:8888/. 
+#### Troubleshooting
+- Web server trouble? Try [MAMP](http://mamp.info/). It's is a dead-simple tool for running a compatible server locally on your machine. Point the Web Server's Document Root at the downloaded `Respre` directory and visit http://localhost:8888/. 
+- Some images not showing up? Be sure that none of your images are named for the resolution `0`. And make sure the image file names contain only numbers and one extension. Avoid names like `1024.final.png` or `768alt.jpg`. 
