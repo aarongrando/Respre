@@ -25,7 +25,7 @@
 		$resolution = explode(".", $file)[0];
 
 		if(intval($resolution) > 0) {
-			$markup .= '<img src="/preview/' . $file . '" class="res_' . $resolution . '" />';
+			$markup .= '<img src="preview/' . $file . '" class="res_' . $resolution . '" />';
 			
 			if (isset($upper_resolution)) {
 				$media_upper_limit = 'and (max-width: '.$upper_resolution.'px)';
