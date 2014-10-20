@@ -35,3 +35,6 @@ Some images not showing up? Be sure that none of your images are named for the r
 
 ## Contribute
 Respre is licensed under the MIT License. See `LICENSE` for details. But, it basically says: go for it. I welcome collaboration, let's work together and make it work better for everyone. 
+
+## Background
+I'm Aaron Grando. I'm the Tech Lead at [RTO+P](http://rtop.com); Respre was built with RTO+P's design process firmly in mind. I've also jotted a handful of thoughts on technology on my [personal site](http://gran.do/).
