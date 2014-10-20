@@ -1,4 +1,5 @@
-# Respre
+<img src="https://raw.githubusercontent.com/aarongrando/Respre/master/respre.png" alt="Respre">
+=====
 
 In-browser previewing for static responsive web design comps. No code required. 
 
