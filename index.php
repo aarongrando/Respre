@@ -25,7 +25,7 @@
 	foreach($preview_files as &$file) {
 		$resolution = explode(".", $file)[0];
 		if (intval($resolution) == 0 && strpos($file, '.') === FALSE) {
-			$nav_markup .= '<a href="/?page='.$file.'">'.$file.'</a>';
+			$nav_markup .= '<a href="?page='.$file.'">'.$file.'</a>';
 		}
 		unset($resolution);
 	}
@@ -78,24 +78,23 @@
 <html>
 <head>
 	<title>Responsive Preview</title>
+	<link rel="stylesheet" type="text/css" href="app/app.css">
+	<script type="text/javascript" src="app/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
 	<style>
-		body {
-			margin: 0;
-			padding: 0;
-		}
-		#respre img {
-			display: none;
-			width: 100%;
-		}
 		<? echo $preview_style ?>
 	</style>
 </head>
 
 <body>
 	<? if(strlen($nav_markup) > 0) { ?>
+		<div id="nav-handle">Menu</div>
 		<div id="nav">
-			<a href="/">Index</a>
-			<? echo $nav_markup ?>
+			<div class="links">
+				<a href="index.php">Index</a>
+				<? echo $nav_markup ?>
+				<a class="close">Close</a>
+			</div>
 		</div>
 	<? } ?>
 
