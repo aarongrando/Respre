@@ -21,12 +21,12 @@ body {
     top: -100%; }
 
 #nav {
-  width: 300px;
+  width: 280px;
   margin: 0 auto;
   position: absolute;
   left: 50%;
   top: -999px;
-  margin-left: -150px;
+  margin-left: -140px;
   background: rgba(33, 44, 44, 0.75);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -41,7 +41,7 @@ body {
     display: block;
     padding: .5em 0 .25em 0;
     line-height: 1; }
-    #nav a:hover {
+    #nav a:hover, #nav a:active, #nav a:focus {
       background: rgba(255, 255, 255, 0.2); }
     #nav a.close {
       cursor: pointer;

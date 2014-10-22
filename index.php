@@ -78,6 +78,7 @@
 <html>
 <head>
 	<title>Responsive Preview</title>
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="app/app.css">
 	<script type="text/javascript" src="app/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="app/app.js"></script>
