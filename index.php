@@ -91,7 +91,7 @@
 		<div id="nav-handle">Menu</div>
 		<div id="nav">
 			<div class="links">
-				<a href="index.php">Index</a>
+				<a href="index.php">Home</a>
 				<? echo $nav_markup ?>
 				<a class="close">Close</a>
 			</div>

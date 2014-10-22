@@ -16,6 +16,11 @@ Respre works by automatically reading and displaying the contents of its `previe
 
 There are no restrictions on file formats (any browser-safe formats work), and no restrictions on the number of comps/breakpoints that it will display.
 
+## Pages
+You can add pages to your preview by creating folders within the `preview` directory. A navigation menu will appear when a subfolder is present. Set the subfolder name as the name of the page. Within the subfolder, include a collection of comp images named by resolution – just like the home page – to preview.
+
+See the `Inverse Colors` folder inside the `preview` boilerplate as an example.
+
 ## Good-to-knows
 Your image files do not need to match the resoltion which they are named. For instance, to show a Retina-quality preview at 1024px (`1024.jpg`), your static file should be 2048px wide (_at least_; 1024px is the `min-width`).
 
