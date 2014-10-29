@@ -46,12 +46,13 @@
 			if($file_position+1 != count($display_files)) {
 				$upper_file = $display_files[$file_position+1];
 				$upper_resolution = explode(".", $upper_file)[0];
+				$upper_resolution = $upper_resolution - 1;
 			}
 
 			$preview_markup .= '<img src="'.$display_directory.'/' . $file . '" class="res_' . $resolution . '" />';
 			
 			if (isset($upper_resolution)) {
-				$media_upper_limit = 'and (max-width: '.$upper_resolution.'px)';
+				$media_upper_limit = 'and (max-width: '. $upper_resolution .'px)';
 			} else {
 				$media_upper_limit = '';
 			}
