@@ -5,6 +5,8 @@ In-browser previewing for static responsive web design comps. No code required.
 
 Respre works by automatically reading and displaying the contents of its `preview` directory. `preview` contains a collection of static image comps, each named with their **minimum** resolution (ie. `1024.jpg`), corresponding to a responsive breakpoint. 
 
+<img src="https://raw.githubusercontent.com/wiki/aarongrando/Respre/demo.gif" alt="demo gif">
+
 [See the demo here](http://respre.herokuapp.com/) – adjust your browser's viewport size to preview different static comps.
 
 ## Getting Started
