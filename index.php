@@ -1,4 +1,4 @@
-<?phpphp
+<?php
 
 	// Directory listing for 'preview' directory – used to generate page nav
 	$preview_directory 	= 'preview';
