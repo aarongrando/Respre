@@ -1,11 +1,11 @@
-<?
-	
+<?php
+
 	// Directory listing for 'preview' directory – used to generate page nav
 	$preview_directory 	= 'preview';
 	$preview_files = scandir($preview_directory);
 
-	// Directory listing for the target preview folder. 
-	// If the '?page=' query string is unset, this is the same as the preview directory above. 
+	// Directory listing for the target preview folder.
+	// If the '?page=' query string is unset, this is the same as the preview directory above.
 	if (isset($_GET['page'])) {
 		$display_directory = 'preview/' . $_GET['page'];
 		$display_files = scandir($display_directory);
@@ -32,7 +32,7 @@
 
 	// Loop through the target preview folder and build the markup for the comp previews.
 	foreach($display_files as &$file) {
-		
+
 		$resolution = explode(".", $file)[0];
 
 		if(intval($resolution) > 0) {
@@ -50,13 +50,13 @@
 			}
 
 			$preview_markup .= '<img src="'.$display_directory.'/' . $file . '" class="res_' . $resolution . '" />';
-			
+
 			if (isset($upper_resolution)) {
 				$media_upper_limit = 'and (max-width: '. $upper_resolution .'px)';
 			} else {
 				$media_upper_limit = '';
 			}
-			$preview_style .= 
+			$preview_style .=
 				'@media (min-width: '.$resolution.'px) '. $media_upper_limit .' {
 					#respre img.res_'.$resolution.' {
 						display: block;
@@ -84,24 +84,24 @@
 	<script type="text/javascript" src="app/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="app/app.js"></script>
 	<style>
-		<? echo $preview_style ?>
+		<?php echo $preview_style ?>
 	</style>
 </head>
 
 <body>
-	<? if(strlen($nav_markup) > 0) { ?>
+	<?php if(strlen($nav_markup) > 0) { ?>
 		<div id="nav-handle">Menu</div>
 		<div id="nav">
 			<div class="links">
 				<a href="index.php">Home</a>
-				<? echo $nav_markup ?>
+				<?php echo $nav_markup ?>
 				<a class="close">Close</a>
 			</div>
 		</div>
-	<? } ?>
+	<?php } ?>
 
 	<div id="respre">
-		<? echo $preview_markup ?>
+		<?php echo $preview_markup ?>
 	</div>
 </body>
 </html>
